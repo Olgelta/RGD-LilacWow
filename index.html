@@ -172,7 +172,7 @@
                 const entity = entityElement.entity;
 
                 const resetPosition = new Vec3(0.9799172282218933, 3.0325520515441895, 12.015762329101562);
-                const resetTarget = new Vec3(0.2797499959247354, 2.0495771087804767, -0.1273462145109967);
+                const resetTarget = new Vec3(0.2797499959247354, 1.0495771087804767, -0.1273462145109967);
 
                 class FrameScene extends Script {
                     frameScene(bbox) {
@@ -200,7 +200,7 @@
 
                         // configure camera
                         this.entity.camera.horizontalFov = true;
-                        this.entity.camera.farClip = bbox.halfExtents.length() * 24;
+                        this.entity.camera.farClip = bbox.halfExtents.length() * 22;
                         this.entity.camera.nearClip = this.entity.camera.farClip * 0.001;
                         // set NONE tonemapping until https://github.com/playcanvas/engine/pull/7179 is deployed
                         this.entity.camera.toneMapping = 6;
